@@ -13,6 +13,14 @@ public class ScanerV2 {
 
         display.show(result);
 
-        System.out.println("Do other things");
+        scan(new Invoker(), x);
+    }
+
+    public void scan(Invoker invoker, String x) {
+        String result = x + x;
+
+        display.show(result);
+
+        invoker.invoke();
     }
 }

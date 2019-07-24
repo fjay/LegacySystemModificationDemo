@@ -8,6 +8,7 @@ public class ScanerV1 {
         // Show result in console"
         System.out.println(result);
 
-        System.out.println("Do other things");
+        Invoker invoker = new Invoker();
+        invoker.invoke();
     }
 }
