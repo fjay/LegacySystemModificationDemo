@@ -1,10 +1,10 @@
 package org.team4u.lsmd.d1;
 
-public class ScanerV2 {
+public class DemoV2 {
 
     private Display display;
 
-    public ScanerV2(Display display) {
+    public DemoV2(Display display) {
         this.display = display;
     }
 

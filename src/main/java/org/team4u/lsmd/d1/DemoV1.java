@@ -1,6 +1,6 @@
 package org.team4u.lsmd.d1;
 
-public class ScanerV1 {
+public class DemoV1 {
 
     public void scan(String x) {
         String result = x + x;
