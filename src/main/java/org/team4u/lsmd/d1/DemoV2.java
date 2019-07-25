@@ -15,7 +15,7 @@ public class DemoV2 {
 
         new Invoker().invoke();
 
-        System.out.println(x());
+        x();
 
     }
 
@@ -27,7 +27,7 @@ public class DemoV2 {
         invoker.invoke();
     }
 
-    protected String x() {
-        return DemoUtil.x();
+    protected void x() {
+        // ...
     }
 }

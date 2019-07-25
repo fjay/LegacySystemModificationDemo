@@ -27,10 +27,9 @@ public class Demo1Test {
         String x = "1";
         new DemoV2(display) {
             @Override
-            protected String x() {
-                return "";
+            protected void x() {
             }
-        }.scan(new FakeInvoker(), x);
+        }.scan(x);
         Assert.assertEquals(x + x, display.getResult());
     }
 }
