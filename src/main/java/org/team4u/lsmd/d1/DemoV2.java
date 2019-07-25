@@ -13,7 +13,10 @@ public class DemoV2 {
 
         display.show(result);
 
-        scan(new Invoker(), x);
+        new Invoker().invoke();
+
+        System.out.println(x());
+
     }
 
     public void scan(Invoker invoker, String x) {
@@ -22,5 +25,9 @@ public class DemoV2 {
         display.show(result);
 
         invoker.invoke();
+    }
+
+    protected String x() {
+        return DemoUtil.x();
     }
 }

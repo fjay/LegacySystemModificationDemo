@@ -14,10 +14,23 @@ public class Demo1Test {
     }
 
     @Test
-    public void testSuccessfulWithoutInvoker() {
+    public void testSuccessfulResultWithoutInvoker() {
         FakeDisplay display = new FakeDisplay();
         String x = "1";
         new DemoV2(display).scan(new FakeInvoker(), x);
+        Assert.assertEquals(x + x, display.getResult());
+    }
+
+    @Test
+    public void testSuccessfulResultWithoutX() {
+        FakeDisplay display = new FakeDisplay();
+        String x = "1";
+        new DemoV2(display) {
+            @Override
+            protected String x() {
+                return "";
+            }
+        }.scan(new FakeInvoker(), x);
         Assert.assertEquals(x + x, display.getResult());
     }
 }
