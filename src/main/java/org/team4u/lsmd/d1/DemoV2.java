@@ -24,7 +24,13 @@ public class DemoV2 {
 
         display.show(result);
 
+        result = formatResult(result);
+
         invoker.invoke();
+    }
+
+    protected String formatResult(String result) {
+        return result.toUpperCase().trim();
     }
 
     protected void x() {
